@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>Registrasi Member</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/bootstrap/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg warnaku static-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Registrasi Member</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+        <h1 class="mt-5 warnaku-text">Registrasi</h1>
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-sm-6">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" placeholder="Nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="jeniskelamin">Jenis Kelamin</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="lk" value="option1" required>
+              <label class="form-check-label" for="lk"> Laki-laki </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="pr" value="option2" required>
+              <label class="form-check-label" for="pr"> Perempuan </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="tlpn">Nomor Telepon</label>
+            <input type="number" class="form-control" id="tlpn" placeholder="Nomor Telepon" required>
+          </div>
+          <div class="form-group">
+            <label for="tgl_lahir"> Tanggal Lahir
+              <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+            </label>
+         </div>
+       </div>
+       <div class="col-sm-6">
+         <div class="form-group">
+           <label for="aktivitas">Aktivitas anda saat ini:</label>
+           <select class="form-control" id="aktivitas" required>
+             <option>Pelajar</option>
+             <option>Mahasiswa</option>
+             <option>Karyawan/Pegawai</option>
+             <option>Profesional</option>
+             <option>Wirausaha</option>
+             <option>Lainnya</option>
+           </select>
+         </div>
+         <div class="form-group">
+           <label for="deskripsi">Deskripsi tentang anda</label>
+           <textarea class="form-control" rows="2" id="deskripsi" maxlength="160" required></textarea>
+           <div id="textcount"></div>
+         </div>
+         <div class="form-group form-check">
+           <label class="form-check-label">
+             <input class="form-check-input" type="checkbox" required>Saya telah memahami dan menyetujui aturan privasi
+           </label>
+         </div>
+         <button type="regis" class="btn btn-primary">Registrasi</button>
+       </form>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="http://code.jquery.com/jquery-1.5.js"></script>
+      <script>
+      $(document).ready(function() {
+        var text_max = 160;
+        $('#textcount').html(text_max + ' characters remaining');
+
+        $('#deskripsi').keyup(function() {
+          var text_length = $('#deskripsi').val().length;
+          var text_remaining = text_max - text_length;
+
+        $('#textcount').html(text_remaining + ' characters remaining');
+        });
+
+      });
+     </script>
+</body>
+
+</html>
