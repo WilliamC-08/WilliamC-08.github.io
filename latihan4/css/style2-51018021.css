@@ -1,0 +1,74 @@
+body{
+  background-color:#1f3c88;
+  color: #f6f5f5;
+  font-family:sans-serif;
+}
+
+.navlink{
+  color:#070d59;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: #1f3c88;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pembuat{
+  color:#f6f5f5;
+  text-decoration: none;
+  text-align:center;
+
+}
+.pembuat:hover{
+  color:#fcf876;
+  text-decoration: underline;
+}
+
+.heading{
+  border: 2px dashed #fcf876;
+  padding: 10px;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius:10px;
+  width: 300px;
+  background-color:inherit;
+  text-align:center;
+}
+
+.title{
+  text-align:center;
+  border: 5px dotted #ee6f57;
+  padding: 15px;
+  border-radius:10px;
+  color:#f6f5f5
+}
+
+.fill{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 2px 10px black;
+}
+
+li {
+  float:left;
+}
+li a{
+  display:block;
+  color:white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration:none;
+}
+li a:hover{background-color:#b3b3b3}
+
+.navigasi{
+list-style-type:none;
+margin: 0;
+padding: 0;
+overflow:hidden;
+background-color:#f6f5f5;
+
+}
