@@ -55,7 +55,7 @@ fetch(endpoint_url+ "/movie/" + movie_id + "?api_key=" + key + "&language=en-US&
                   https://image.tmdb.org/t/p/w1280${data.backdrop_path} 1280w"
            size="100vw"
            alt="${data.title}"
-           style="transform: translate3d(-50%, 0px, 0px);opacity: 1;">
+           style="transform: translate3d(-50%, 50%, 0px);opacity: 1;">
     </div>
   </div>
   <div class="container">
