@@ -1,4 +1,4 @@
-const endpoint_url = 'https://https://51018021.p-web.click/KingOfPop/api/';
+const endpoint_url = 'https://51018021.p-web.click/KingOfPop/api/';
 
 //newline to br
 /*function nl2br (str, is_xhtml) {
