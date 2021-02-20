@@ -48,7 +48,7 @@ function frontalbum(){
       <div class="card">
         <a href="./pages/albumsongs.html?id=${album.album_id}">
         <div class="card-image">
-          <img src="..${album.album_image}">
+          <img src="${album.album_image}">
           </div>
           <div class="card-content">
           <p class="center-align greykop-text">${album.album_name}</p>
