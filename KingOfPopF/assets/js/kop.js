@@ -76,7 +76,7 @@ function albumlist(){
       <div class="card">
         <a href="albumsongs.html?id=${album.album_id}">
         <div class="card-image">
-          <img src="..${album.album_image}">
+          <img src="../${album.album_image}">
           </div>
           <div class="card-content">
           <p class="center-align greykop-text">${album.album_name}</p>
@@ -101,7 +101,7 @@ function albuminfo1(album_id){
       songs.info.forEach(function(album){
         albumHTML += `
         <div class="col s1 m4">
-          <img src="..${album.album_image}" style="width:300px">
+          <img src="../${album.album_image}" style="width:300px">
 
           <h4>${album.album_name}</h4>
           <h5>${album.album_creator}</h5>
