@@ -179,7 +179,7 @@ function songsearch(title){
   .then(function(data){
     var titleHTML="";
     data.title.forEach(function(song){
-     titleHTML=`
+     titleHTML +=`
      <a href="lyrics.html?id=${song.song_id}" class="data collection-item">${song.song_title}</a></p>
      `;
    });
